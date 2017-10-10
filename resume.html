@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>KAY BELARDINELLI &mdash; web development &mdash; providence, RI</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta prefix="og: http://ogp.me/ns#" property="og:image" content="Kay Belardinelli is a web developer located in Providence, Rhode Island." />
+
+	<style type="text/css">
+
+		/*** COLORS ***/
+		/*
+			#edeae6 white
+			#dedbd6 warm light
+			#dce8e6 light
+			#424c49 medium
+			#77b2ca blue
+			#bad5e0 blue bright
+			#485456 green
+			#303936 dark
+			#070e0d black
+		*/
+
+		@font-face {
+			font-family: 'FreightDisp Pro';
+			src: url("fonts/FreigDisProBooItaWeb.eot");
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'FreightDisp Pro';
+			src: url("fonts/FreigDisProBooItaWeb.woff") format("woff");
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'Aktiv';
+			src: url('fonts/Aktiv_Rg.ttf');
+		}
+		@font-face {
+			font-family: 'Aktiv';
+			src: url('fonts/Aktiv_Bd.ttf');
+			font-weight: bold;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background: #edeae6;
+			color: #303936;
+			font-family: 'Aktiv', sans-serif;
+			font-size: 14px;
+			letter-spacing: 0.025em;
+			line-height: 1.75em;
+			padding: 0;
+			margin: 0;
+			text-transform: uppercase;
+		}
+		.intro a, .details a {
+			border-bottom: 2px solid #77b2ca;
+			text-decoration: none;
+			transition: background 0.125s ease;
+		}
+		.intro a {
+			color: #424c49;
+		}
+		.details a {
+			color: #303936;
+		}
+		.intro a:hover, .details a:hover {
+			background: #bad5e0;
+		}
+		h1, h2 {
+			line-height: 1.025em;
+			margin-bottom: 0;
+		}
+		main h1 {
+			color: #485456;
+			margin-bottom: 0.5em;
+		}
+		header {
+			background: #303936;
+			border-bottom: 0.5em solid #070e0d;
+			color: #dedbd6;
+			text-align: center;
+			padding: 0.5em 1.5em 2em;
+		}
+		.subheading {
+			font-family: 'FreightDisp Pro', 'Times New Roman', Times, serif;
+			font-size: 1.125em;
+			font-style: italic;
+			font-weight: 200;
+			letter-spacing: 0.075em;
+			margin: 0 auto;
+		}
+		main, .intro {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 70em;
+		}
+		main {	
+			padding: 3em 0.5em;
+		}
+		.intro {
+			padding: 3em 0.5em 0;
+			text-align: center;
+		}
+		.portrait img {
+			max-width: 300px;
+		}
+		.article {
+			background-color: #424c49;
+			background-size: cover;
+			display: block;
+			height: 150px;
+			margin-top: 0.5em;
+			text-decoration: none;
+		}
+		.article .text {
+			background: rgba(66,76,73,0.75);
+			color: #dedbd6;
+			height: 100%;
+			padding: 1em;
+			text-align: left;
+			transition: all 0.125s ease;
+		}
+		.article p {
+			margin-top: 0.125em;
+		}
+		.article:hover .text {
+			background: rgba(66,76,73,0.95);
+			color: #edeae6;
+		}
+		.article.bostonhassle {
+			background-image: url('img/bostonhassle.png');
+			background-position: 0;
+		}
+		.article.aeturnum {
+			background-image: url('img/aeturnum.png');
+		}
+		.article.launchsource {
+			background-image: url('img/launchsource.png');
+		}
+		.article.paolino {
+			background-image: url('img/paolino.png');
+		}
+		.article.serena {
+			background-image: url('img/serena.png');
+		}
+		.article.trust-in-nothing {
+			background-image: url('img/trust-in-nothing.jpg');
+		}
+		.article:last-of-type {
+			margin-bottom: 3em;
+		}
+		section + section {
+			border-top: 1px solid #77b2ca;
+			padding-top: 2em;
+		}
+		@media all and (max-width: 499px) {
+			.secondary {
+				display: none;
+			}
+		}
+		@media all and (min-width: 500px) {
+			header h1 {
+				font-size: 4em;
+			}
+			.intro {
+				padding-bottom: 3em;
+			}
+			section h1 {
+				font-size: 2em;
+			}
+		}
+		@media all and (min-width: 890px) {
+			p {
+				font-size: 1.25em;
+			}
+			header {
+				padding-bottom: 4em;
+			}
+			header h1 {
+				font-size: 8.5em;
+			}
+			h2 {
+				font-size: 2.75em;
+			}
+			.subheading {
+				font-size: 2.5em;
+				margin-top: 1rem;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Kay Belardinelli</h1>
+
+		<p class="subheading">Web Engineer</p>
+
+	</header>
+
+	<div class="intro">
+<!-- 		<p class="portrait">
+			<img src="img/portrait.jpg" alt="Kay Belardinelli">
+		</p> -->
+		<p>
+			<strong>Web developer</strong> with an eye for <strong>UX</strong>, in <strong>Providence, RI.</strong>
+		</p>
+		<p class="secondary">
+			also a <a href="http://kaybelardinelli.com">visual artist</a> &amp; <a href="http://marpvd.com">musician</a>.
+		</p>
+		<p class="secondary">
+			likes things to be simple and effective.
+		</p>
+	</div>
+
+	<main>
+
+		<section>
+
+			<h2>Hard Skills</h2>
+
+			<div>
+				<ul>
+					<li>JavaScript</li>
+					<li>jquery</li>
+					<li>Vue.js</li>
+
+					<li>CSS</li>
+					<li>sass</li>
+					<li>less</li>
+
+					<li>WordPress</li>
+					<li>Drupal</li>
+
+					<li>PHP</li>
+
+					<li>MySQL</li>
+
+					<li>Third Party APIs</li>
+
+					<li>Git</li>
+					<li>github</li>
+					<li>bitbucket</li>
+
+					<li>commandline tools</li>
+
+					<li>UX Design</li>
+
+					<li>QA</li>
+					<li>Issue tracking &amp; PM (Jira, Basecamp, Trello, Pivitol Tracker)</li>
+
+				</ul>
+			</div>
+
+			<h3>Opportunities for Growth</h3>
+
+			<ul>
+				<li><strike>React.js</strike></li>
+				<li><strike>object-oriented programming (PHP specifically)</strike></li>
+				<li><strike>mysql</strike></li>
+				<li><strike>ajax</strike></li>
+				<li>3rd party APIs</li>
+				<li>regressions testing</li>
+				<li><strike>"SASS workflows and frameworks like Bourbon"</strike></li>
+				<li>Twig</li>
+				<li><strike>Managed Build/Deploy with Jenkins"</strike></li>
+				<li><strike>DevOps stuff</strike></li>
+				<li>SVG, CSS Animation, transitions</li>
+			</ul>
+
+		</section>
+
+		<section>
+
+			<h2>Soft Skills</h2>
+
+			<ul>
+				<li>excellent communicator, in writing, verbal, etc.</li>
+
+				<li>great at sharing code that is clean, legible, and well-documented</li>
+
+				<li>very organized</li>
+
+				<li>advocate for positive user experience</li>
+
+				<li>diverse interests outside of work</li>
+
+				<li>experience working in agency environments</li>
+
+				<li>experience with all sides of the business</li>
+
+				<li>critical thinking &amp; creativity</li>
+
+				<li>thorough / attention to detail</li>
+			</ul>
+
+				<h3>Opportunities for Growth</h3>
+
+			<ul>
+				<li>be more flexible. roll with the punches. anticipate changes. expect the unexpected.</li>
+
+				<li>be more light and carefree. prioritize goals and tasks. </li>
+			</ul>
+
+		</section>
+
+		<section class="details">
+			<p>info at kay belardinelli dot com</p>
+			<p>P.O. Box 23285, Providence RI 02903</p>
+			<p>
+			 	<a href="https://github.com/kangabell">
+					Kay on Github
+				</a>
+			</p>
+		</section>
+
+	</main>
+
+</body>
+
+</html>
