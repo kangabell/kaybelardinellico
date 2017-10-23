@@ -1,0 +1,243 @@
+
+/*** COLORS ***/
+/*
+	#edeae6 white
+	#dedbd6 warm light
+	#dce8e6 light
+	#424c49 medium
+	#77b2ca blue
+	#bad5e0 blue bright
+	#485456 green
+	#303936 dark
+	#070e0d black
+*/
+
+@font-face {
+	font-family: 'FreightDisp Pro';
+	src: url("fonts/FreigDisProBooItaWeb.eot");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'FreightDisp Pro';
+	src: url("fonts/FreigDisProBooItaWeb.woff") format("woff");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Aktiv';
+	src: url('fonts/Aktiv_Rg.ttf');
+}
+@font-face {
+	font-family: 'Aktiv';
+	src: url('fonts/Aktiv_Bd.ttf');
+	font-weight: bold;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #edeae6;
+	color: #303936;
+	font-family: 'Aktiv', sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.025em;
+	line-height: 1.75em;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+a {
+	color: #303936;
+	text-decoration: none;
+
+}
+.intro a, .details a, .experience a {
+	border-bottom: 2px solid #77b2ca;
+	transition: background 0.125s ease;
+}
+.intro a {
+	color: #424c49;
+}
+.intro a:hover, .details a:hover, .experience a:hover {
+	background: #bad5e0;
+}
+h1, h2, h3 {
+	line-height: 1.025em;
+	margin-bottom: 0;
+}
+main h1 {
+	color: #485456;
+	margin-bottom: 0.5em;
+}
+header {
+	background: #303936;
+	border-bottom: 0.5em solid #070e0d;
+	color: #dedbd6;
+	text-align: center;
+	padding: 0.5em 1.5em 2em;
+}
+header a {
+	color: #dedbd6;
+}
+.subheading {
+	font-family: 'FreightDisp Pro', 'Times New Roman', Times, serif;
+	font-size: 1.125em;
+	font-style: italic;
+	font-weight: 200;
+	letter-spacing: 0.075em;
+	margin: 0 auto;
+}
+main, .intro {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70em;
+	text-align: center;
+}
+main {	
+	padding: 3em 0.5em;
+}
+.intro {
+	padding: 3em 0.5em 0;
+}
+.article {
+	background-color: #424c49;
+	background-size: cover;
+	display: block;
+	height: 150px;
+	margin-top: 0.5em;
+	text-decoration: none;
+	position: relative;
+
+	overflow: hidden; 
+}
+.article .text {
+	/*background: rgba(66,76,73,0.75);*/
+	color: #dedbd6;
+	height: 100%;
+	padding: 1em;
+	text-align: left;
+	transition: all 0.125s ease;
+
+	position:relative;
+    
+    display: block;
+    z-index: 1000;
+}
+.article:before {
+	background: rgba(66,76,73,0.75);
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.article:after {
+	background: rgba(66,76,73,0.95);
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 0%;
+	transition: height 0.125s;
+	transform: rotate(5deg);
+}
+
+.article:hover:after {
+	height: 100%;
+	transition: height 0.25s;
+}
+
+.article p {
+	margin-top: 0.125em;
+}
+.article:hover .text {
+	color: #edeae6;
+}
+
+.article.bostonhassle {
+	background-image: url('img/bostonhassle.png');
+	background-position: 0;
+}
+.article.aeturnum {
+	background-image: url('img/aeturnum.png');
+}
+.article.marpvd {
+	background-image: url('img/marpvd.png');
+}
+.article.paolino {
+	background-image: url('img/paolino.png');
+}
+.article.serena {
+	background-image: url('img/serena.png');
+}
+.article.pps {
+	background-image: url('img/pps.png');
+}
+.article:last-of-type {
+	margin-bottom: 3em;
+}
+section + section {
+	border-top: 1px solid #77b2ca;
+	padding-top: 2em;
+}
+@media all and (max-width: 499px) {
+	.secondary {
+		display: none;
+	}
+}
+@media all and (min-width: 500px) {
+	header h1 {
+		font-size: 4em;
+	}
+	.intro {
+		padding-bottom: 3em;
+	}
+	section h1 {
+		font-size: 2em;
+	}
+}
+@media all and (min-width: 890px) {
+	p {
+		font-size: 1.25em;
+	}
+	header {
+		padding-bottom: 4em;
+	}
+	header h1 {
+		font-size: 8.5em;
+	}
+	h2 {
+		font-size: 2.75em;
+	}
+	.subheading {
+		font-size: 2.5em;
+		margin-top: 1rem;
+	}
+}
+
+/*** RESUME PAGE ***/
+
+main.resume {
+	padding: 0 0.5em 3em;
+	text-align: left;
+}
+
+section.experience a {
+	display: table;
+}
+section.experience p {
+	margin: 1.5rem 0;
+}
+
+section.skills ul {
+	padding-left: 1rem;
+}
+
+section.work > h2 {
+	margin-bottom: 2rem;
+}
