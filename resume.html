@@ -62,21 +62,21 @@
 			margin: 0;
 			text-transform: uppercase;
 		}
-		.intro a, .details a {
-			border-bottom: 2px solid #77b2ca;
+		a {
+			color: #303936;
 			text-decoration: none;
+		}
+		.intro a, .details a, .experience a {
+			border-bottom: 2px solid #77b2ca;
 			transition: background 0.125s ease;
 		}
 		.intro a {
 			color: #424c49;
 		}
-		.details a {
-			color: #303936;
-		}
-		.intro a:hover, .details a:hover {
+		.intro a:hover, .details a:hover, .experience a:hover {
 			background: #bad5e0;
 		}
-		h1, h2 {
+		h1, h2, h3 {
 			line-height: 1.025em;
 			margin-bottom: 0;
 		}
@@ -90,6 +90,9 @@
 			color: #dedbd6;
 			text-align: center;
 			padding: 0.5em 1.5em 2em;
+		}
+		header a {
+			color: #dedbd6;;
 		}
 		.subheading {
 			font-family: 'FreightDisp Pro', 'Times New Roman', Times, serif;
@@ -105,7 +108,7 @@
 			max-width: 70em;
 		}
 		main {	
-			padding: 3em 0.5em;
+			padding: 0 0.5em 3em;
 		}
 		.intro {
 			padding: 3em 0.5em 0;
@@ -144,8 +147,8 @@
 		.article.aeturnum {
 			background-image: url('img/aeturnum.png');
 		}
-		.article.launchsource {
-			background-image: url('img/launchsource.png');
+		.article.marpvd {
+			background-image: url('img/marpvd.png');
 		}
 		.article.paolino {
 			background-image: url('img/paolino.png');
@@ -153,8 +156,8 @@
 		.article.serena {
 			background-image: url('img/serena.png');
 		}
-		.article.trust-in-nothing {
-			background-image: url('img/trust-in-nothing.jpg');
+		.article.pps {
+			background-image: url('img/pps.png');
 		}
 		.article:last-of-type {
 			margin-bottom: 3em;
@@ -198,6 +201,21 @@
 			}
 		}
 
+		section.experience a {
+			display: table;
+		}
+		section.experience p {
+			margin: 1.5rem 0;
+		}
+
+		ul {
+			padding-left: 1rem;
+		}
+
+		section.work > h2 {
+			margin-bottom: 2rem;
+		}
+
 	</style>
 </head>
 
@@ -205,16 +223,13 @@
 
 	<header>
 
-		<h1>Kay Belardinelli</h1>
+		<h1><a href="http://kangabell.co">Kay Belardinelli</a></h1>
 
 		<p class="subheading">Web Engineer</p>
 
 	</header>
 
 	<div class="intro">
-<!-- 		<p class="portrait">
-			<img src="img/portrait.jpg" alt="Kay Belardinelli">
-		</p> -->
 		<p>
 			<strong>Web developer</strong> with an eye for <strong>UX</strong>, in <strong>Providence, RI.</strong>
 		</p>
@@ -230,90 +245,91 @@
 
 		<section>
 
-			<h2>Hard Skills</h2>
+			<h2>Skills</h2>
 
 			<div>
 				<ul>
-					<li>JavaScript</li>
-					<li>jquery</li>
-					<li>Vue.js</li>
+					<li>JavaScript, jquery, Vue.js</li>
 
-					<li>CSS</li>
-					<li>sass</li>
-					<li>less</li>
+					<li>CSS, sass, less</li>
 
-					<li>WordPress</li>
-					<li>Drupal</li>
+					<li>WordPress, Drupal</li>
 
 					<li>PHP</li>
 
 					<li>MySQL</li>
 
-					<li>Third Party APIs</li>
-
-					<li>Git</li>
-					<li>github</li>
-					<li>bitbucket</li>
-
-					<li>commandline tools</li>
+					<li>Git, github, bitbucket</li>
 
 					<li>UX Design</li>
 
-					<li>QA</li>
-					<li>Issue tracking &amp; PM (Jira, Basecamp, Trello, Pivitol Tracker)</li>
+					<li>Issue tracking/PM software (Jira, Pivotal Tracker, etc)</li>
 
 				</ul>
 			</div>
 
-			<h3>Opportunities for Growth</h3>
+		</section>
 
-			<ul>
-				<li><strike>React.js</strike></li>
-				<li><strike>object-oriented programming (PHP specifically)</strike></li>
-				<li><strike>mysql</strike></li>
-				<li><strike>ajax</strike></li>
-				<li>3rd party APIs</li>
-				<li>regressions testing</li>
-				<li><strike>"SASS workflows and frameworks like Bourbon"</strike></li>
-				<li>Twig</li>
-				<li><strike>Managed Build/Deploy with Jenkins"</strike></li>
-				<li><strike>DevOps stuff</strike></li>
-				<li>SVG, CSS Animation, transitions</li>
-			</ul>
+		<section class="work">
+
+			<h2>Work Samples</h2>
+
+			<a class="article aeturnum" href="http://aeturnum.weareshellshock.com/">
+				<div class="text">
+					<h2>Aeturnum</h2>
+					<p>Fullstack Development</p>
+				</div>
+			</a>
+
+			<a class="article marpvd" href="http://marpvd.com/">
+				<div class="text">
+					<h2>Mar</h2>
+					<p>Development &amp; Design</p>
+				</div>
+			</a>
+
+			<a class="article paolino" href="http://paolinoproperties.com/">
+				<div class="text">
+					<h2>Paolino Properties</h2>
+					<p>Frontend Development</p>
+				</div>
+			</a>
 
 		</section>
 
-		<section>
+		<section class="experience">
 
-			<h2>Soft Skills</h2>
+			<h2>Experience</h2>
 
-			<ul>
-				<li>excellent communicator, in writing, verbal, etc.</li>
+			<p>
+				<h3>Freelance Developer</h3>
+				<a href="kangabell.co">Kay Belardinelli</a>
+				Jul 2016 - Present<br/>
+			</p>
 
-				<li>great at sharing code that is clean, legible, and well-documented</li>
+			<p>
+				<h3>Senior Developer</h3>
+				<a href="http://weareshellshock.com/">Shellshock</a>
+				Jan 2016 - Jun 2016
+			</p>
 
-				<li>very organized</li>
+			<p>
+				<h3>Frontend Developer</h3>
+				<a href="https://linchpin.agency/">Linchpin</a>
+				Aug 2015 - Nov 2015
+			</p>
 
-				<li>advocate for positive user experience</li>
+			<p>
+				<h3>Frontend Developer</h3>
+				<a href="http://workshopri.com/">Work-Shop</a>
+				2015
+			</p>
 
-				<li>diverse interests outside of work</li>
-
-				<li>experience working in agency environments</li>
-
-				<li>experience with all sides of the business</li>
-
-				<li>critical thinking &amp; creativity</li>
-
-				<li>thorough / attention to detail</li>
-			</ul>
-
-				<h3>Opportunities for Growth</h3>
-
-			<ul>
-				<li>be more flexible. roll with the punches. anticipate changes. expect the unexpected.</li>
-
-				<li>be more light and carefree. prioritize goals and tasks. </li>
-			</ul>
+			<p>
+				<h3>Senior Web Designer</h3>
+				<a href="http://batchbook.com/">Batchbook</a>
+				2013 - 2014
+			</p>
 
 		</section>
 
