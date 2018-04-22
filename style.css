@@ -163,20 +163,11 @@ main {
 	background-image: url('img/bostonhassle.png');
 	background-position: 0;
 }
-.article.aeturnum {
-	background-image: url('img/aeturnum.png');
-}
 .article.marpvd {
 	background-image: url('img/marpvd.png');
 }
-.article.paolino {
-	background-image: url('img/paolino.png');
-}
 .article.serena {
 	background-image: url('img/serena.png');
-}
-.article.pps {
-	background-image: url('img/pps.png');
 }
 .article:last-of-type {
 	margin-bottom: 3em;
@@ -222,7 +213,7 @@ section + section {
 
 /*** RESUME PAGE ***/
 
-main.resume {
+/*main.resume {
 	text-align: left;
 }
 
@@ -239,4 +230,4 @@ section.skills ul {
 
 section.work > h2 {
 	margin-bottom: 2rem;
-}
+}*/
