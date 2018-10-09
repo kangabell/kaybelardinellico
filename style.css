@@ -184,6 +184,10 @@ main {
 .article.marpvd {
 	background-image: url('img/marpvd.png');
 }
+.article.legend {
+	background-image: url('img/legend.png');
+	background-position-y: 30%;
+}
 .article.pps {
 	background-image: url('img/pps.png');
 }
