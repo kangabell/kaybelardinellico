@@ -74,6 +74,13 @@ h3 {
 	font-size: 2em;
 	margin-top: 0;
 }
+ul {
+	padding-left: 0;
+}
+ul li {
+	margin-left: 0.75em;
+	margin-right: 0.75em;
+}
 header,
 .details {
 	text-align: center;
@@ -120,6 +127,9 @@ main {
 .secondary {
 	text-align: justify;
 	text-transform: none;
+}
+.services {
+	display: none;
 }
 .article {
 	background-color: #424c49;
@@ -202,7 +212,6 @@ main {
 	padding-top: 2em;
 }
 @media all and (max-width: 499px) {
-	h2,
 	.secondary {
 		display: none;
 	}
@@ -222,9 +231,6 @@ main {
 	}
 }
 @media all and (min-width: 890px) {
-	.intro {
-		font-size: 1.25em;
-	}
 	header {
 		padding-bottom: 4em;
 	}
@@ -238,8 +244,23 @@ main {
 		font-size: 2.5em;
 		margin-top: 1rem;
 	}
+	.primary {
+		font-size: 1.25em;
+	}
 	.secondary {
 		font-size: 1rem;
+	}
+	.services {
+		display: flex;
+		margin-bottom: 3rem;
+	}
+	.services ul {
+		flex: 1;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style: none;
+		margin-left: 2rem;
+		display: flex;
 	}
 }
 
