@@ -133,6 +133,7 @@ main {
 }
 .article {
 	background-color: #424c49;
+	background-position-y: center;
 	background-size: cover;
 	display: block;
 	height: 120px;
