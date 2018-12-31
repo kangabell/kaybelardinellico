@@ -198,6 +198,12 @@ main {
 .article.serena {
 	background-image: url('img/serena.png');
 }
+.article.amor {
+	background-image: url('img/amor.png');
+}
+.article.ppsdb {
+	background-image: url('img/ppsdb.png');
+}
 .article:last-of-type {
 	margin-bottom: 3em;
 }
