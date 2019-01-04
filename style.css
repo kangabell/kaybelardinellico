@@ -82,6 +82,10 @@ ul li {
 	margin-left: 0.75em;
 	margin-right: 0.75em;
 }
+/*ul li:before {
+	content: '-';
+	padding-right: 0.5em;
+}*/
 header,
 .details {
 	text-align: center;
@@ -133,6 +137,33 @@ main, .intro {
 .services {
 	display: none;
 }
+.project {
+	overflow: hidden;
+	position: relative;
+}
+.project ul {
+	position: absolute;
+	z-index: 1;
+	background: rgba(237, 234, 230, 0.72);
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	padding: 1rem;
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	transform: translateX(100%);
+	right: 0;
+	list-style: none;
+	transition: all 0.25s;
+	width: 16rem;
+	text-align: right;
+	text-transform: none;
+}
+.project:hover ul {
+	transform: translateX(0);
+}
 .project a {
 	background-color: #424c49;
 	background-position-y: center;
@@ -140,6 +171,7 @@ main, .intro {
 	display: block;
 	height: 120px;
 	margin-top: 0.5em;
+	margin-bottom: 0 !important;
 	text-decoration: none;
 	overflow: hidden; 
 	position: relative;
@@ -233,14 +265,14 @@ main, .intro {
 		height: 150px;
 	}
 	.project a:after { /* moving background on hover */
-		height: 0%;
-		opacity: 0;
-		transition: all 0.125s;
-	}
-	.project a:hover:after {
 		height: 100%;
 		opacity: 0.95;
 		transition: height 0.25s;
+	}
+	.project a:hover:after {
+		height: 0%;
+		opacity: 0;
+		transition: all 0.125s;
 	}
 }
 @media all and (min-width: 890px) {
