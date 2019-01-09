@@ -5,6 +5,7 @@
 	#dedbd6 warm light
 	#dce8e6 light
 	#424c49 medium
+	#d2ad53 gold
 	#77b2ca blue
 	#bad5e0 blue bright
 	#485456 green
@@ -89,40 +90,41 @@ header {
 	background: #303936;
 	border-bottom: 0.5em solid #070e0d;
 	color: #dedbd6;
-	padding: 1.5em 1.5em 2em;
+	padding: 1.5em;
+}
+.logo {
+	display: inline-block;
+	text-align: center;
 }
 header h1 {
-	margin-top: 0.375em;
-	text-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,0.5);
-}
-header p {
-	text-shadow: 0.095em 0.095em 0.095em rgba(0,0,0,0.5);
-}
-header a {
-	color: #dedbd6;
-}
-.subheading {
 	font-family: 'FreightDisp Pro', 'Times New Roman', Times, serif;
-	font-size: 1.125em;
+	font-size: 2.25em;
 	font-style: italic;
 	font-weight: 200;
-	letter-spacing: 0.075em;
-	margin: 0 auto;
+	margin-top: 0.125em;
+	text-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,0.5);
 }
-main, .intro {
+.subheading {
+	color: #d2ad53;
+	letter-spacing: 0.35em;
+	margin-top: -0.5em;
+	margin-bottom: 0;
+	text-shadow: 0.095em 0.095em 0.095em rgba(0,0,0,0.5);
+}
+.subheading span {
+	font-family: 'FreightDisp Pro', 'Times New Roman', Times, serif;
+}
+.wrapper {
 	margin-left: auto;
 	margin-right: auto;
-}
-main {	
 	max-width: 70rem;
+}
+main, .intro {
 	padding: 0 0.5em 3em;
 }
 .intro {
 	max-width: 50rem;
 	padding: 1em 0.5em;
-}
-.primary {
-	text-align: center;
 }
 .secondary {
 	text-align: justify;
@@ -218,8 +220,8 @@ main {
 	}
 }
 @media all and (min-width: 500px) {
-	header h1 {
-		font-size: 4em;
+	header {
+		text-align: left;
 	}
 	.intro {
 		padding: 3em 0.5em;
@@ -242,18 +244,8 @@ main {
 	}
 }
 @media all and (min-width: 890px) {
-	header {
-		padding-bottom: 4em;
-	}
-	header h1 {
-		font-size: 8.5em;
-	}
 	h3 {
 		font-size: 2.75em;
-	}
-	.subheading {
-		font-size: 2.5em;
-		margin-top: 1rem;
 	}
 	.primary {
 		font-size: 1.25em;
