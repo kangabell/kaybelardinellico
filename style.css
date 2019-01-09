@@ -138,31 +138,7 @@ main, .intro {
 	display: none;
 }
 .project {
-	overflow: hidden;
 	position: relative;
-}
-.project ul {
-	position: absolute;
-	z-index: 1;
-	background: rgba(237, 234, 230, 0.72);
-	top: 0;
-	bottom: 0;
-	height: 100%;
-	padding: 1rem;
-	margin: 0;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	transform: translateX(100%);
-	right: 0;
-	list-style: none;
-	transition: all 0.25s;
-	width: 16rem;
-	text-align: right;
-	text-transform: none;
-}
-.project:hover ul {
-	transform: translateX(0);
 }
 .project a {
 	background-color: #424c49;
@@ -239,8 +215,27 @@ main, .intro {
 .project a.ppsdb {
 	background-image: url('img/ppsdb.png');
 }
-.project a:last-of-type {
+.project:last-of-type {
 	margin-bottom: 3em;
+}
+.project ul {
+	position: absolute;
+	z-index: 1;
+	background: rgba(237, 234, 230, 0.72);
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	padding: 1rem;
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	right: 0;
+	list-style: none;
+	width: 16rem;
+	text-align: right;
+	text-transform: none;
+	opacity: 0;
 }
 .details {
 	border-top: 1px solid #77b2ca;
@@ -296,6 +291,10 @@ main, .intro {
 		list-style: none;
 		margin-left: 2rem;
 		display: flex;
+	}
+	.project:hover ul {
+		opacity: 1;
+		transition: all 0.25s;
 	}
 }
 
