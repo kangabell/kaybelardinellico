@@ -292,24 +292,3 @@ main {
 		transition: all 0.25s;
 	}
 }
-
-/*** RESUME PAGE ***/
-
-/*main.resume {
-	text-align: left;
-}
-
-section.experience a {
-	display: table;
-}
-section.experience p {
-	margin: 1.5rem 0;
-}
-
-section.skills ul {
-	padding-left: 1rem;
-}
-
-section.work > h2 {
-	margin-bottom: 2rem;
-}*/
