@@ -90,7 +90,7 @@ header {
 	background: #303936;
 	border-bottom: 0.5em solid #070e0d;
 	color: #dedbd6;
-	padding: 1.5em;
+	padding: 1.5rem 0.75rem;
 }
 .logo {
 	display: inline-block;
@@ -235,6 +235,7 @@ main {
 }
 @media all and (min-width: 500px) {
 	header {
+		padding: 1.5rem;
 		text-align: left;
 	}
 	section h1 {
