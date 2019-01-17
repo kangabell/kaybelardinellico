@@ -4,6 +4,7 @@
 	#edeae6 white
 	#dedbd6 warm light
 	#dce8e6 light
+	#697779 gray
 	#424c49 medium
 	#d2ad53 gold
 	#77b2ca blue
@@ -54,14 +55,14 @@ a {
 	text-decoration: none;
 
 }
-.intro a, .details a, .experience a {
+.intro a, .experience a {
 	border-bottom: 2px solid #77b2ca;
 	transition: background 0.125s ease;
 }
 .intro a {
 	color: #424c49;
 }
-.intro a:hover, .details a:hover, .experience a:hover {
+.intro a:hover, .experience a:hover {
 	background: #bad5e0;
 }
 h1, h2, h3 {
@@ -118,12 +119,12 @@ header h1 {
 	margin-right: auto;
 	max-width: 70rem;
 }
-main, .intro {
-	padding: 0 0.5em 3em;
+main {
+	padding: 0 0.5rem;
 }
 .intro {
 	max-width: 50rem;
-	padding: 1em 0.5em;
+	padding: 1rem 0.5rem;
 }
 .secondary {
 	text-align: justify;
@@ -210,8 +211,28 @@ main, .intro {
 	margin-bottom: 3em;
 }
 .details {
-	padding: 1rem;
 	background: #dedbd6;
+}
+.details .wrapper {
+	padding: 0.5rem 0.5rem 3rem;
+}
+.details p {
+	margin: 0.75em 0;
+}
+.details a {
+	border-bottom: 2px solid #edeae6;
+	color: #505d5f;
+	font-size: 0.75rem;
+	transition: background 0.25s ease;
+}
+.details a:hover,
+.details a:focus {
+	background: #edeae6;
+	color: #070e0d;
+}
+.details .icon {
+	margin-right: 0.25em;
+	vertical-align: -0.15em;
 }
 @media all and (max-width: 499px) {
 	.secondary {
