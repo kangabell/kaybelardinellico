@@ -82,8 +82,7 @@ ul li {
 	margin-left: 0.75em;
 	margin-right: 0.75em;
 }
-header,
-.details {
+header {
 	text-align: center;
 }
 header {
@@ -211,8 +210,8 @@ main, .intro {
 	margin-bottom: 3em;
 }
 .details {
-	border-top: 1px solid #77b2ca;
-	padding-top: 2em;
+	padding: 1rem;
+	background: #dedbd6;
 }
 @media all and (max-width: 499px) {
 	.secondary {
